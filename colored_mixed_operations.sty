@@ -1,0 +1,12 @@
+\RequirePackage{stackengine,xcolor,scalerel}
+\ProvidesPackage{col_mix_ops}[2022/10/04]
+
+\def\cpm{\mathbin{\ThisStyle{\ensurestackMath{\abovebaseline[-\dimexpr1pt+2.4\LMpt]{%
+  \stackunder[-\dimexpr1pt+2.5\LMpt]{\color{green!70}\SavedStyle+}{%
+  \color{red}\SavedStyle-}}}}}}
+\def\cmp{\mathbin{\ThisStyle{\ensurestackMath{\abovebaseline[-\dimexpr1.1pt+0.55\LMpt]{%
+  \stackunder[-\dimexpr1pt+2.5\LMpt]{\color{green!70}\SavedStyle-}{%
+  \color{red}\SavedStyle+}}}}}}
+\begin{document}
+
+\endinput
